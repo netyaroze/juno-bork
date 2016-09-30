@@ -22,16 +22,16 @@ The script performs three functions:
 - Downloads audio samples of new releases
 
 ```bash
-$ regina drone-ambient
-$ regina deep-house today 10
-$ regina minimal-tech-house eight-weeks 500
-$ regina house this-week 50
+$ junobork drone-ambient
+$ junobork deep-house today 10
+$ junobork minimal-tech-house eight-weeks 500
+$ junobork house this-week 50
 ```
 
 Check out the help for all available arguments:
 
 ```bash
-$ regina --help
+$ junobork --help
 ```
 
 ## Examples
@@ -39,7 +39,7 @@ $ regina --help
 Run this weekly with `cron` to browse new releases via iTunes:
 
 ```bash
-python regina.py deep-house this-week 500 && \
+python junobork.py deep-house this-week 500 && \
     mv deep-house/*.mp3 \
     ~/Music/iTunes/iTunes\ Media/Automatically\ Add\ to\ iTunes.localized/ && \
     rm -rf deep-house
